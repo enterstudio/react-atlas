@@ -13,7 +13,9 @@
     "build-css": "webpack --config ./webpack.config.buildcss.js",
     "clean": "rimraf ./lib",
     "clean:mainJS": "rimraf ./lib/main.js",
-    "prebuild": "npm run clean"
+    "prebuild": "npm run clean",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "bugs": {
     "url": "https://github.com/DigitalRiver/react-atlas/issues"
@@ -32,7 +34,8 @@
     "react-dom": "^15.0.2",
     "normalize.css": "^4.1.1",
     "react-themeable": "1.0.1",
-    "react-autosuggest": "^3.7.3"
+    "react-autosuggest": "^3.7.3",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "autoprefixer": "^6.3.6",
@@ -80,5 +83,6 @@
     "webpack-dev-middleware": "^1.6.1",
     "webpack-hot-middleware": "^2.10.0"
   },
-  "repository": "https://github.com/DigitalRiver/react-atlas/tree/master/packages/react-atlas-core"
+  "repository": "https://github.com/DigitalRiver/react-atlas/tree/master/packages/react-atlas-core",
+  "snyk": true
 }
