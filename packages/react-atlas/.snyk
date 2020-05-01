@@ -1,0 +1,18 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.14.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - react-atlas-core > react-autosuggest > react-redux > lodash:
+        patched: '2020-05-01T07:05:33.245Z'
+    - react-atlas-default-theme > react-autosuggest > react-redux > lodash:
+        patched: '2020-05-01T07:05:33.245Z'
+    - react-atlas-core > react-autosuggest > redux > lodash:
+        patched: '2020-05-01T07:05:33.245Z'
+    - react-atlas-default-theme > react-autosuggest > redux > lodash:
+        patched: '2020-05-01T07:05:33.245Z'
+    - react-atlas-default-theme > react-atlas-core > react-autosuggest > react-redux > lodash:
+        patched: '2020-05-01T07:05:33.245Z'
+    - react-atlas-default-theme > react-atlas-core > react-autosuggest > redux > lodash:
+        patched: '2020-05-01T07:05:33.245Z'
